@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import React, { useState, useEffect} from 'react';
 import './App.css';
+import Button from './components/button';
+import Sidebar from './components/sidebar';
+import Header from './components/header';
+import { PRODUCTS } from './constants/data/products';
+import Card from './components/card';
+import { useFetch } from './hooks/useFetch';
+import { URL_BASE, URL_ENDPOINTS } from './constants/services';
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [showProducts, setShowProducts] = useState(false);
+
+  const { data: user, error, loading } = useFetch(`${URL_BASE}${URL_ENDPOINTS.USERS}`);
+
+  const onHandlerCart = () => {
+    setIsOpen(!isOpen);
+  }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Sidebar onClose={onHandlerCart} isOpen={isOpen} />
+      <Header numbersOfItems={0} onHandlerCart={onHandlerCart} user={user[0]} />
+      <h1>Productos destacados</h1>
+        <div className='products-container'>
+        {PRODUCTS.map((product) => (
+          <Card product={product} key={product.name} />
+        ))}
+      </div>
     </div>
   );
 }
