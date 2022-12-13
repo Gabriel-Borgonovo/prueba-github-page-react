@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/prueba-github-page-react/static/css/main.a5f13372.css",
-    "main.js": "/prueba-github-page-react/static/js/main.a48de293.js",
+    "main.css": "/prueba-github-page-react/static/css/main.457e15f5.css",
+    "main.js": "/prueba-github-page-react/static/js/main.c04fb341.js",
     "static/js/787.4592e1f5.chunk.js": "/prueba-github-page-react/static/js/787.4592e1f5.chunk.js",
     "index.html": "/prueba-github-page-react/index.html",
-    "main.a5f13372.css.map": "/prueba-github-page-react/static/css/main.a5f13372.css.map",
-    "main.a48de293.js.map": "/prueba-github-page-react/static/js/main.a48de293.js.map",
+    "main.457e15f5.css.map": "/prueba-github-page-react/static/css/main.457e15f5.css.map",
+    "main.c04fb341.js.map": "/prueba-github-page-react/static/js/main.c04fb341.js.map",
     "787.4592e1f5.chunk.js.map": "/prueba-github-page-react/static/js/787.4592e1f5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5f13372.css",
-    "static/js/main.a48de293.js"
+    "static/css/main.457e15f5.css",
+    "static/js/main.c04fb341.js"
   ]
 }
