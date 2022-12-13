@@ -7,7 +7,7 @@ const Header = ({ numbersOfItems = 0, onHandlerCart, user}) => {
             
             <div className="header-menu-logo">
                 
-                <h2 className="header-logo">DS🐢</h2>
+                <h2 className="header-logo">GB🐢</h2>
             
             </div>
             
